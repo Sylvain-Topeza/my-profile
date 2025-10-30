@@ -1,0 +1,71 @@
+/* Colors and fonts */
+body {
+  background: rgb(245, 245, 247);
+  color: rgb(50, 50, 50);
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 40px;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Lora', serif;
+  letter-spacing: 0.3px;
+  color: #575F7D;
+}
+h1 { font-size: 32px; font-weight: 900; }
+h2 { font-size: 20px; font-weight: 500; color: #7ECE90; }
+
+/* Container centered */
+.container {
+  width: 800px;
+  margin: 40px auto;
+}
+
+/* Card component */
+.card-white {
+  background-color: white;
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+/* Utilities */
+.text-center { text-align: center; }
+.img-circle { border-radius: 50%; object-fit: cover; }
+
+/* Links and button */
+a { color: #6B72E1; text-decoration: none; transition: color 0.3s ease; }
+a:hover { color: #000; }
+
+.btn-blue {
+  display: inline-block;
+  background-color: #6B72E1;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-blue:hover { background-color: #000; color: white; }
+
+/* Social list inline */
+.list-inline { list-style: none; padding-left: 0; }
+.list-inline > li { display: inline; padding: 0 12px; }
+.list-inline i { font-size: 28px; vertical-align: middle; }
+.list-inline a:hover i { color: #000; }
+
+/* Intro spacing tweak with id */
+#introduction p { margin-bottom: 24px; }
+
+/* Responsive container */
+@media (max-width: 960px) {
+  .container { width: 700px; }
+}
+@media (max-width: 720px) {
+  .container { width: 500px; }
+}
+@media (max-width: 540px) {
+  .container { width: 320px; }
+}
